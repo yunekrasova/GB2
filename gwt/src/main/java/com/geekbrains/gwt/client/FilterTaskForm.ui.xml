@@ -1,0 +1,46 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+    <g:VerticalPanel>
+        <g:DecoratorPanel>
+            <g:FormPanel ui:field="form" method="GET">
+                <g:HorizontalPanel>
+                    <g:VerticalPanel spacing="10">
+                        <g:HorizontalPanel>
+                            <g:Label text="ID:" width="100px"/>
+                            <g:TextBox name="id" ui:field="idText"  width="200px"/>
+                        </g:HorizontalPanel>
+                        <g:HorizontalPanel>
+                            <g:Label text="Caption:" width="100px"/>
+                            <g:TextBox name="caption" ui:field="captionText"  width="200px"/>
+                        </g:HorizontalPanel>
+                        <g:HorizontalPanel>
+                            <g:Label text="Owner:" width="100px"/>
+                            <g:TextBox ui:field="ownerList" width="200px"/>
+                        </g:HorizontalPanel>
+                    </g:VerticalPanel>
+                    <g:VerticalPanel spacing="10">
+                        <g:HorizontalPanel>
+                            <g:Label text="Assigned:" width="100px"/>
+                            <g:TextBox ui:field="assignedList" width="200px"/>
+                        </g:HorizontalPanel>
+                        <g:HorizontalPanel>
+                            <g:Label text="Status:" width="100px"/>
+                            <g:ValueListBox ui:field="statusList" width="200px"/>
+                        </g:HorizontalPanel>
+                        <g:HorizontalPanel>
+                            <g:Label text="Descriprion:" width="100px"/>
+                            <g:TextBox name="descriprion" ui:field="descriprionText"  width="200px"/>
+                        </g:HorizontalPanel>
+                    </g:VerticalPanel>
+                    <g:VerticalPanel>
+                        <g:Button ui:field="btnSubmit" width="100px">Найти</g:Button>
+                        <g:Button ui:field="btnClear" width="100px">Очистить</g:Button>
+                        <g:Label text=" " width="100px" height="30px"/>
+                        <g:Button ui:field="btnAdd" width="100px">Создать</g:Button>
+                    </g:VerticalPanel>
+                </g:HorizontalPanel>
+            </g:FormPanel>
+        </g:DecoratorPanel>
+        <g:Label text="" width="100px" height="30px"/>
+    </g:VerticalPanel>
+</ui:UiBinder>
